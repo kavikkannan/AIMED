@@ -1,6 +1,12 @@
 import Footer from './Footer';
-
+import { useRouter } from 'next/navigation';
 const LandingPage = () => {
+  const router = useRouter();
+
+  const GetStarted = () => {
+    router.push("/home")
+  };
+
   return (
     <div className="bg-white text-black font-sans relative">
       {/* Hero Section */}
@@ -56,7 +62,7 @@ const LandingPage = () => {
         <p className="text-xl mb-6 text-center max-w-3xl text-white z-20">
           Harnessing the power of voice and video analysis for accurate, early identification of autism in educational and NGO settings.
         </p>
-        <button className="px-6 py-3 bg-white text-black rounded-lg hover:bg-gray-200 z-20">
+        <button onClick={GetStarted} className="px-6 py-3 bg-white text-black rounded-lg hover:bg-gray-200 z-20">
           Get Started
         </button>
 
@@ -114,7 +120,7 @@ const LandingPage = () => {
         <p className="text-lg mb-6 max-w-3xl mx-auto">
           Partner with AIMED to bring this innovative technology to your community. Collaborate with us to refine and expand our capabilities.
         </p>
-        <button className="px-6 py-3 bg-white text-black rounded-lg hover:bg-gray-200">
+        <button onClick={GetStarted} className="px-6 py-3 bg-white text-black rounded-lg hover:bg-gray-200">
           Get Started
         </button>
       </section>

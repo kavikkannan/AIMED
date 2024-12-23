@@ -6,6 +6,7 @@ export default function CommonHeaderPage() {
     <header className="bg-white text-black shadow-lg py-4 px-6 flex items-center justify-between">
       {/* Left Section: Logo */}
       <div className="flex items-center">
+        <a href="/home">
         <img
           src="./images/aimed_logo.jpg" // Update the path to your logo image
           alt="AIMED"
@@ -13,6 +14,7 @@ export default function CommonHeaderPage() {
           height={80}
           className="mr-2 rounded-2xl"
         />
+        </a>
       </div>
 
       {/* Middle Section: Company Name */}
