@@ -7,7 +7,7 @@ const LandingPage = () => {
       <section className="relative h-screen flex flex-col justify-center items-center overflow-hidden">
         {/* Sliding Background Images */}
         <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
-  <div className="flex animate-slideX h-screen w-[100vh]  ">
+  <div className="flex animate-slideX h-screen w-[100vh] sm:w-fit ">
     <img
       src="./images/img5.jpg"
       alt="Background 1"

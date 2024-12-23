@@ -1,8 +1,9 @@
+import LandingPage from "@/app/page";
 
-
-export default function Landing() {
+export default function Home() {
     return(
         <div>
+            <LandingPage/>
         </div>
     );
 }
