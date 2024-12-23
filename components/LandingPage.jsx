@@ -1,3 +1,5 @@
+"use client"
+
 import Footer from './Footer';
 import { useRouter } from 'next/navigation';
 const LandingPage = () => {
